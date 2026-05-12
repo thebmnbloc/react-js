@@ -71,7 +71,7 @@ function App() {
       </div>
 
       <div className="flex flex-col items-center justify-center px-5">
-        <ul className="text-white">
+        <ul className="text-white line-style">
           {content[activeContentIndex].map((item, index) => (
              <li key={index}>{item}</li>
           ))}
