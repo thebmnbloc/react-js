@@ -20,6 +20,12 @@ function App() {
     'Next.js framework for production-grade server-side rendering and static generation',
     'React DevTools browser extension for debugging component hierarchies and state',
     'Create React App and Vite for rapid project scaffolding and development setup'
+  ],
+  [
+    'React is less error prone compared to JS',
+    'React is quicker compare JS',
+    'React is more dynamic',
+    'React is state friendly.'
   ]
 ];
 
@@ -57,9 +63,14 @@ function App() {
           onClick={() => setActiveContentIndex(2)}
           >Related Resources
         </button>
+        <button
+          className={activeContentIndex === 3 ? "bg-blue-500 px-6 py-3" : "bg-blue-200 px-6 py-3"}
+          onClick={() => setActiveContentIndex(3)}
+          >React VS JS
+        </button>
       </div>
 
-      <div className="flex flex-col items-center px-5">
+      <div className="flex flex-col items-center justify-center px-5">
         <ul className="text-white">
           {content[activeContentIndex].map((item, index) => (
              <li key={index}>{item}</li>
