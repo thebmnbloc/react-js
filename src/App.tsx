@@ -35,10 +35,10 @@ function App() {
     <div className="min-h-screen bg-slate-900 flex flex-col items-center p-4 gap-8">
       <header className="flex items-center justfity-center gap-2">
         <img
-        src={"/assets/react.svg"}
+        src={"/src/assets/react.svg"}
         alt="logo"
-        width={20}
-        height={20}
+        width={50}
+        height={50}
         className="rounded-full"
         />
         <span>
